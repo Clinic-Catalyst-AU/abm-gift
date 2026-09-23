@@ -23,6 +23,9 @@ h2{font-size:clamp(1.35rem,3.6vw,1.9rem);font-weight:800;color:var(--deep);margi
 .hero p{max-width:56ch;color:rgba(255,255,255,.82);font-size:1.05rem}
 .hero .brand{font-family:'Montserrat',sans-serif;font-weight:800;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase;margin-bottom:2.2rem}
 .hero .brand span{color:var(--teal-bright)}
+.hero .wrap{display:grid;grid-template-columns:1fr 240px;gap:36px;align-items:center}
+.hero .shot{width:240px;aspect-ratio:4/5;object-fit:cover;display:block;border:1px solid rgba(0,212,188,.35)}
+@media(max-width:700px){.hero .wrap{grid-template-columns:1fr}.hero .shot{width:200px;margin-top:8px}}
 .gift{background:#fff;border:1px solid var(--line);margin:28px 0;padding:36px 32px}
 .gift .num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--deep);color:var(--teal-bright);font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:14px}
 .gift p{color:var(--muted);margin-bottom:1rem}
@@ -59,10 +62,13 @@ footer a{color:var(--deep)}
 
 <section class="hero">
   <div class="wrap">
+  <div>
     <div class="brand">Clinic <span>Catalyst</span></div>
     <div class="eyebrow">Aesthetic Business Masters, Perth</div>
     <h1>Your two gifts <span class="ser">from Kelly and Alicia</span></h1>
     <p>Thank you for spending the day with us in Perth. Here is everything we promised from the stage: a free session on your clinic's ads, marketing and systems, and the Claude skills pack, with a short video that installs it with you.</p>
+  </div>
+  <img class="shot" src="https://assets.cdn.filesafe.space/nrnTN07xakan82JmlsuO/media/fd19daf6-a50e-45d8-8b92-42da39d31e73.jpg" alt="Kelly and Alicia at Aesthetic Business Masters Perth">
   </div>
 </section>
 
@@ -72,7 +78,7 @@ footer a{color:var(--deep)}
   <section class="gift" id="session">
     <div class="num">1</div>
     <div class="eyebrow">Gift one</div>
-    <h2>A free 30-minute session on your clinic</h2>
+    <h2>Your Ads, Marketing &amp; Systems Strategy <span style="display:block;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;color:var(--teal);font-size:.85em;margin-top:.2em">Get our eyes on your business</span></h2>
     <div class="value">Valued at $1,800. Free for ABM Perth attendees</div>
     <p>Thirty minutes with both of us, live, looking at your ads, your marketing and your systems. You leave with recommendations you can act on the same week, whether or not we ever work together. No pitch.</p>
     <a class="btn" href="https://api.leadconnectorhq.com/widget/bookings/adsmarketingsystems" target="_blank" rel="noopener">Book my free session</a>
